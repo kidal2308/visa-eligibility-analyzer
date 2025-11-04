@@ -1,4 +1,5 @@
 anthropic==0.39.0
 flask==3.0.0
 flask-cors==4.0.0
-python-dotenv==1.0.0pypdf2==3.0.1
+python-dotenv==1.0.0
+pypdf2==3.0.1

@@ -32,11 +32,17 @@ An AI-powered tool to analyze US visa eligibility using Claude API.
 
 ## Architecture
 
-The system uses Claude's reasoning capabilities to analyze complex immigration eligibility across multiple visa categories. The prompt engineering approach ensures:
+The system uses Claude's reasoning capabilities to analyse complex immigration eligibility across multiple visa categories. The prompt engineering approach ensures:
 - Structured JSON output for reliable parsing
 - Multi-factor analysis (education, experience, achievements)
 - Confidence scoring for transparency
 - Actionable next steps
+
+## Testing
+
+Currently, manual testing via UI. For production deployment, would implement:
+- Unit tests for PDF parsing and Claude API integration
+- Validation tests for prompt engineering outputs
 
 ## Future Enhancements
 

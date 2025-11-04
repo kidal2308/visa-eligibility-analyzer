@@ -7,15 +7,18 @@ from dotenv import load_dotenv
 import json
 from werkzeug.utils import secure_filename
 import PyPDF2
-import io
 
+# Load environment variables (API keys) from .env file
 load_dotenv()
 
+# Initialise Flask app and Anthropic client
 app = Flask(__name__)
 CORS(app)
 
 client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
 
+# This prompt instructs Claude to act as an immigration attorney and analyze
+# visa eligibility across multiple visa categories (H-1B, O-1A, O-1B, EB-2, etc.)
 VISA_ANALYSIS_PROMPT = """You are an expert US immigration attorney. Analyze this candidate's profile and provide visa eligibility assessment.
 
 Candidate Profile:
@@ -72,8 +75,17 @@ JSON structure:
   "risk_factors": []
 }}"""
 
+
 def extract_text_from_pdf(pdf_file):
-    """Extract text from uploaded PDF"""
+    """
+    Extract text content from an uploaded PDF file.
+
+    Args:
+        pdf_file: FileStorage object from Flask request
+
+    Returns:
+        str: Extracted text from all pages, or None if extraction fails
+    """
     try:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
         text = ""
@@ -85,7 +97,20 @@ def extract_text_from_pdf(pdf_file):
         return None
 
 def parse_resume_with_claude(resume_text):
-    """Use Claude to extract structured data from resume"""
+    """
+    Use Claude AI to extract structured information from resume text.
+
+    This function sends the raw resume text to Claude and asks it to extract
+    key information like education, experience, field, achievements, etc.
+
+    Args:
+        resume_text (str): Raw text extracted from resume PDF
+
+    Returns:
+        dict: Structured data with keys: education, field, experience_years,
+              current_status, country, achievements, has_offer, job_details
+        None: If parsing fails
+    """
     prompt = f"""Extract the following information from this resume. Return ONLY valid JSON with no markdown.
 
 Resume text:
@@ -130,12 +155,22 @@ Be concise. If information is not found, use reasonable defaults."""
         return None
 
 
+#### Flask Routes ####
 @app.route('/')
 def index():
     return render_template('index.html')
 
 @app.route('/parse-resume', methods=['POST'])
 def parse_resume():
+    """
+    Handle resume upload and parsing.
+
+    Accepts a PDF file, extracts text, and uses Claude to parse structured
+    information. This endpoint is called when users upload their resume.
+
+    Returns:
+        JSON response with parsed data or error message
+    """
     try:
         if 'resume' not in request.files:
             return jsonify({'success': False, 'error': 'No file uploaded'}), 400
@@ -173,6 +208,16 @@ def parse_resume():
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
+    """
+    Analyze visa eligibility based on user profile.
+
+    This takes user data (education, experience, etc.) in text, sends it to Claude
+    with the visa analysis prompt, and returns detailed eligibility assessment
+    for multiple visa types.
+
+    Returns:
+        JSON response with visa analysis or error message
+    """
     try:
         data = request.json
 
@@ -248,4 +293,6 @@ def analyze():
         }), 500
 
 if __name__ == '__main__':
+    # Run Flask development server
+    # Note: In production, use a proper server like Gunicorn or uWSGI
     app.run(debug=True, port=5000)
