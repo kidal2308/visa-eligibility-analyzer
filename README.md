@@ -48,10 +48,10 @@ The system uses Claude's reasoning capabilities to analyze complex immigration e
 ## Demo
 
 ### Upload Resume & Analyze
-![Upload Resume & Analyze](demos/Flyway 1.gif)
+![Upload Resume & Analyze](demos/flyway-upload.gif)
    
 ### View Results
-![Results](demos/Flyway 2.gif)
+![Results](demos/flyway-results.gif)
 
 ## Note
 
