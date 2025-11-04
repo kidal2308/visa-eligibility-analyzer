@@ -16,7 +16,7 @@ An AI-powered tool to analyze US visa eligibility using Claude API.
 - **Frontend:** HTML, CSS, JavaScript
 
 ## Structure
-
+```
 visa-eligibility-analyzer/
 ├── main.py                
 ├── requirements.txt
@@ -29,6 +29,7 @@ visa-eligibility-analyzer/
 │       └── main.js
 └── templates/
     └── index.html
+```
 
 ## Setup
 
